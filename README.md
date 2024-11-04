@@ -2,6 +2,11 @@
 
 Remote Sensing Labeling Tool is an interactive platform for annotating and labeling remote sensing data, such as satellite imagery. This tool is particularly suited for researchers, data scientists, and geospatial analysts working with remote sensing datasets and aiming to prepare labeled data for machine learning and analysis workflows.
 
+# Demo
+
+We also provide a live demo which is currently being refined
+[Demo](https://mapit.earth/)
+
 ## Features
 
 - **Data Upload & Management**: Easily upload GeoTIFF and other remote sensing formats for labeling.
