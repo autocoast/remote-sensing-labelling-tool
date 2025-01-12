@@ -1,0 +1,5 @@
+@layer utilities {
+    .darkbg {
+      background: radial-gradient(circle at bottom, navy 0, black 100%);
+    }
+  }
