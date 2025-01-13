@@ -4,7 +4,7 @@
 [![License](https://img.shields.io/badge/license-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 [![Live Demo](https://img.shields.io/badge/demo-online-brightgreen)](https://mapit.earth)
 
-The **Remote Sensing Labelling Tool** is an open-source, web-based application for annotating, preprocessing, and managing remote sensing data. It is designed to assist researchers, analysts, and developers in processing geospatial data efficiently. The tool supports multiple satellite formats, advanced visualization, and analysis workflows.
+The **Remote Sensing Labelling Tool** is an open-source, web-based application for annotating remote sensing data. It is designed to assist researchers, analysts, and developers in labelling geospatial data efficiently. The tool supports multiple satellite format and, advanced visualization.
 
 **Live Demo**: [https://mapit.earth](https://mapit.earth)
 
