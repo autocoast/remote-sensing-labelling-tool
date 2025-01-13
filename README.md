@@ -127,4 +127,4 @@ Special thanks to Helmholtz Imaging and the open-source community for their supp
 
 ## Contact
 
-If you have questions or need support, feel free to create an issue in the repository or contact us through [mapit.earth](https://mapit.earth).
+If you have questions or need support, feel free to create an issue in the repository or contact us through [hello@mapit.earth](mailto:hello@mapit.earth).
