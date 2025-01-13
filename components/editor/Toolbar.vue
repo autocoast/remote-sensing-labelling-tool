@@ -1,3 +1,24 @@
+<!--
+/*
+ * Remote Sensing Labelling Tool
+ * Copyright (C) 2025 Helmholtz-Zentrum Hereon
+ * Author: David Pogorzelski
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <https://www.gnu.org/licenses/>.
+ */
+-->
+
 <template>
 
     <!-- Sidebar/Menu -->
@@ -36,7 +57,7 @@
             <div class="indicator">
                 <span v-if="editorStore.showHotkeys" class="indicator-item badge badge-primary">{{
                     hotkeyNameToShortcutName('hk_toggle_eraser')
-                    }}</span>
+                }}</span>
                 <button class="btn w-12"
                     :class="editorStore.eraser.active ? ' bg-slate-200 text-slate-950 border-slate-200' : ''"
                     @click="editorStore.activateTool('eraser')">
@@ -63,7 +84,7 @@
             <div class="indicator">
                 <span v-if="editorStore.showHotkeys" class="indicator-item badge badge-primary">{{
                     hotkeyNameToShortcutName('hk_toggle_bucket')
-                    }}</span>
+                }}</span>
                 <button class="btn w-12"
                     :class="editorStore.bucket.active ? ' bg-slate-200 text-slate-950 border-slate-200' : ''"
                     @click="editorStore.activateTool('bucket')">
@@ -76,7 +97,7 @@
             <div class="indicator">
                 <span v-if="editorStore.showHotkeys" class="indicator-item badge badge-primary">{{
                     hotkeyNameToShortcutName('hk_toggle_gap_drawer')
-                }}</span>
+                    }}</span>
                 <button class="btn w-12"
                     :class="editorStore.gapDrawer.active ? ' bg-slate-200 text-slate-950 border-slate-200' : ''"
                     @click="editorStore.activateTool('gapDrawer')">
@@ -89,7 +110,7 @@
                 <div class="indicator">
                     <span v-if="editorStore.showHotkeys" class="indicator-item badge badge-primary">{{
                         hotkeyNameToShortcutName('hk_toggle_wand')
-                        }}</span>
+                    }}</span>
                     <button @click="toggleMenu" class="btn w-12"
                         :class="editorStore.wand.menuOpen || editorStore.wand.active ? ' bg-slate-200 text-slate-950 border-slate-200' : ''"
                         :style="{ border: editorStore.wand.overwriteClass ? '2px solid ' + editorStore.wand.overwriteClass : 'none' }"
@@ -121,7 +142,7 @@
             <div class="indicator">
                 <span v-if="editorStore.showHotkeys" class="indicator-item badge badge-primary">{{
                     hotkeyNameToShortcutName('hk_undo')
-                    }}</span>
+                }}</span>
                 <button class="btn w-12" @click="HistoryHandler.getInstance().undo()">
                     <Icon name="mdi:undo" style="color: black" />
                 </button>
@@ -129,7 +150,7 @@
             <div class="indicator">
                 <span v-if="editorStore.showHotkeys" class="indicator-item badge badge-primary">{{
                     hotkeyNameToShortcutName('hk_redo')
-                    }}</span>
+                }}</span>
                 <button class="btn w-12" @click="HistoryHandler.getInstance().redo()">
                     <Icon name="mdi:redo" style="color: black" />
                 </button>
