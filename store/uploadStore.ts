@@ -53,38 +53,17 @@ export const useUploadStore = defineStore<'uploadStore', UploadStore, UploadStor
                 color: '#FF0000'
             }, {
                 id: 2,
-                className: 'Tree',
-                color: '#00FF00'
-            }, {
-                id: 3,
-                className: 'Road',
-                color: '#0000FF'
-            },
-            {
-                id: 1,
-                className: 'Sand',
-                color: '#DD3F00'
-            }, {
-                id: 2,
-                className: 'Tidal',
+                className: 'Vegetation',
                 color: '#44AA44'
             }, {
                 id: 3,
-                className: 'Desert',
-                color: '#00AAFF'
+                className: 'Water',
+                color: '#0000FF'
             },
             {
                 id: 4,
-                className: 'Scrubs',
+                className: 'Bare Ground',
                 color: '#FFE000'
-            }, {
-                id: 5,
-                className: 'Vegetation',
-                color: '#DFFF23'
-            }, {
-                id: 6,
-                className: 'Skyscraper',
-                color: '#FF00FF'
             }
         ] as {
             id: number;
