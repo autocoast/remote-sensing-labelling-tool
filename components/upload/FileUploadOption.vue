@@ -20,8 +20,8 @@
 -->
 
 <template>
-    <div class="dark:bg-transparent dark:text-coolgreen border-dashed border-gray-200 dark:border-coolgreen border cursor-pointer rounded-md card shadow-md bg-base-100 w-50 transition-transform transform hover:bg-black-100 hover:shadow-2xl hover:shadow-black-300 duration-200"
-        @click="handleClick">
+    <div
+        class="dark:bg-transparent dark:text-coolgreen border-dashed border-gray-200 dark:border-coolgreen border cursor-pointer rounded-md card shadow-md bg-base-100 w-50 transition-transform transform hover:bg-black-100 hover:shadow-2xl hover:shadow-black-300 duration-200">
         <div class="card-body">
             <div class="flex justify-between items-center">
                 <h2 class="text-lg font-semibold">{{ title }}</h2>
@@ -30,7 +30,7 @@
             <p class="text-sm">{{ description }}</p>
             <pre class="text-xs leading-tight">{{ details }}</pre>
             <slot name="actions">
-                <Button><a href='https://mapit.earth/editor?example=true'>Example</a></Button>
+                <Button @click="handleExampleButtonClick">Example</Button>
             </slot>
         </div>
     </div>
@@ -62,8 +62,7 @@ function handleClick() {
         props.onClick();
     }
 }
+function handleExampleButtonClick() {
+    window.location.href = 'https://mapit.earth/editor?example=true';
+}
 </script>
-
-<style scoped>
-/* Add specific styling for the CardOption component if needed */
-</style>
